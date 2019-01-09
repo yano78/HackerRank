@@ -47,7 +47,8 @@ function freqQuery(queries) {
 			result.push(freq[num] > 0 ? 1 : 0);
 		}
 
-/*		switch(opr) {
+/*		// following code gives timeout error on some testcases
+		switch(opr) {
 			case 1:
 				prevNum = count[num];
 				currNum = (count[num] || 0) + 1;
@@ -69,36 +70,6 @@ function freqQuery(queries) {
 		}
 */	});
 	return result;
-}
-
-function freqQuery1(queries) {
-	const data = [];
-	const resultArray = [];
-	const frequency = {};
-	for (let i = 0; i < queries.length; i++) {
-		const operation = queries[i][0];
-		const number = queries[i][1];
-		if (operation === 1) { // insert
-			const prevNumber = data[number];
-			const currentNumber = (data[number] || 0) + 1;
-			data[number] = currentNumber;
-			frequency[prevNumber] = (frequency[prevNumber] || 0) - 1;
-			frequency[currentNumber] = (frequency[currentNumber] || 0) + 1;
-		} else if (operation === 2 && data[number]) { // delete
-			const prevNumber = data[number];
-			const currentNumber = (data[number] - 1);
-			data[number] = currentNumber;
-			frequency[prevNumber] = (frequency[prevNumber] || 0) - 1;
-			frequency[currentNumber] = (frequency[currentNumber] || 0) + 1;
-		} else if (operation === 3) { // check
-			if (frequency[number] > 0) {
-				resultArray.push(1);
-			} else {
-				resultArray.push(0);
-			}
-		}
-	}
-	return resultArray;
 }
 
 function main() {
