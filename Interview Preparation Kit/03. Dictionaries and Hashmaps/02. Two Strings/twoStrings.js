@@ -7,7 +7,7 @@
 
 function twoStrings(s1, s2) {
 	let chars = 'abcdefghijklmnopqrstuvwxyz'.split('');
-	// let chars = {};
+
 	let result = false;
 	for (let i of chars) {
 		if (s1.indexOf(i) > -1 && s2.indexOf(i) > -1) {
@@ -25,17 +25,6 @@ function main() {
 	s2 = 'hi world';
 	result = twoStrings(s1, s2);
 	console.log(result);
-/*
-	s1 = '';
-	s2 = '';
-	result = freqQuery(s1, s2);
-	console.log(result);
-
-	s1 = '';
-	s2 = '';
-	result = freqQuery(s1, s2);
-	console.log(result);
-*/
 }
 
 main();
