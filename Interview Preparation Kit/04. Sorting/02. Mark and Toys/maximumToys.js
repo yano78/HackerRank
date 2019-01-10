@@ -6,7 +6,19 @@
 
 
 function maximumToys(prices, k) {
+	let maxToys = 0;
+	let sum = 0;
 
+	prices.sort( (a, b) => a > b ? 1 : -1 );
+
+	for (let i = 0; i < prices.length; i++) {
+		if (sum + prices[i] <= k) {
+			sum = sum + prices[i];
+			maxToys++;
+		}
+	}
+
+	return maxToys;
 }
 
 function main() {
