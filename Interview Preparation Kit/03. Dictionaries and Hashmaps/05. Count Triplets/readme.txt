@@ -1,4 +1,6 @@
-You are given an array and you need to find number of tripets of indices (i, j, k) such that the elements at those indices are in geometric progression for a given common ratio r and i < j < k.
+https://www.hackerrank.com/challenges/count-triplets-1
+
+You are given an array and you need to find number of triplets of indices (i, j, k) such that the elements at those indices are in geometric progression (https://en.wikipedia.org/wiki/Geometric_progression) for a given common ratio r and i < j < k.
 
 For example, arr=[1, 4, 16, 64]. If r=4, we have [1, 4, 16] and [4, 16, 64] at indices (0, 1, 2) and (1, 2, 3).
 
@@ -11,7 +13,7 @@ r: an integer, the common ratio
 
 Input Format
 The first line contains two space-separated integers n and r, the size of rr and the common ratio.
-The next line contains n space-seperated integers arr[i].
+The next line contains n space-separated integers arr[i].
 
 Constraints
 1 <= n <= 0^5
