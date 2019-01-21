@@ -1,3 +1,5 @@
+https://www.hackerrank.com/challenges/ctci-bubble-sort
+
 Check out the resources on the page's right side to learn more about bubble sort. The video tutorial is by Gayle Laakmann McDowell, author of the best-selling interview book Cracking the Coding Interview (https://www.hackerrank.com/ctci-book?ref=body).
 
 Consider the following version of Bubble Sort:
